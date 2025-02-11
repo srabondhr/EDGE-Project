@@ -10,23 +10,28 @@ This is a simple e-commerce app built with Flutter. The app displays a list of p
 - View the cart
 - Firebase integration
 
-## Screenshots
 
-![Home Screen](screenshots/home_screen.png)
-![Product Overview Screen](screenshots/products_overview_screen.png)
-![Cart Screen](screenshots/cart_screen.png)
-
-## Getting Started
 
 ### Prerequisites
 
 - Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
 - Firebase account: [Create a Firebase project](https://firebase.google.com/)
+  
+###Project Structure
 
-### Installation
+lib/
+├── main.dart
+├── models/
+│   └── product.dart
+├── providers/
+│   ├── cart_provider.dart
+│   └── products_provider.dart
+├── screens/
+│   ├── cart_screen.dart
+│   ├── home_screen.dart
+│   ├── product_detail_screen.dart
+│   └── products_overview_screen.dart
+└── widgets/
+    ├── badge.dart
+    └── product_item.dart
 
-1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/yourusername/e_commerce_app.git
-   cd e_commerce_app
